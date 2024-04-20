@@ -94,7 +94,7 @@ function formatDate(date) {
 
 function showPerformances(encodedPerformances, formattedDate) {
   const performances = JSON.parse(atob(encodedPerformances));
-  let content = `<h1>Performances on the ${formattedDate}</h1>`; // Use the date in the heading
+  let content = `<h1 id="performances-on">Performances on the ${formattedDate}</h1>`; // Use the date in the heading
   content += "<ul>";
   performances.forEach((perf) => {
     content += `<li id="performance-info">${perf.title} by ${perf.composer}</li>`;
