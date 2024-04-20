@@ -1,13 +1,49 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Interactive Concert Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+      #map {
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="map"></div>
+    <script>
+      var map = L.map("map").setView([53.4808, -2.2426], 13); // Example: center on Manchester
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      fetch("venue_data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          data.forEach((venue) => {
+            if (venue.latitude && venue.longitude) {
+              var marker = L.marker([venue.latitude, venue.longitude]).addTo(
+                map
+              );
+              marker.bindPopup(createPopupContent(venue));
+            }
+          });
+        });
+
+      function createPopupContent(venue) {
+        let content = `<strong>${venue.venue_name}, ${venue.venue_town}</strong><ul>`;
+        venue.concerts.forEach((concert) => {
+          content += `<li>${concert.date}<ul>`;
+          concert.performances.forEach((perf) => {
+            content += `<li>${perf.title}: ${perf.composer}</li>`;
+          });
+          content += `</ul></li>`;
+        });
+        content += `</ul>`;
+        return content;
+      }
+    </script>
   </body>
 </html>
