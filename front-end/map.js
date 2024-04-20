@@ -35,9 +35,10 @@ function generateConcertListHTML(concerts) {
   let content = "<ul>";
   concerts.forEach((concert) => {
     let formattedDate = formatDate(new Date(concert.date));
+    // Pass the concert date as part of the onclick handler
     content += `<li><a href="javascript:void(0);" onclick="showPerformances('${btoa(
       JSON.stringify(concert.performances)
-    )}');">${formattedDate}</a></li>`;
+    )}', '${formattedDate}');">${formattedDate}</a></li>`;
   });
   content += "</ul>";
   return content;
@@ -64,7 +65,7 @@ function showMoreConcerts(venueName, displayedCount) {
         let formattedDate = formatDate(new Date(concert.date));
         additionalConcertsContent += `<li><a href="javascript:void(0);" onclick="showPerformances('${btoa(
           JSON.stringify(concert.performances)
-        )}');">${formattedDate}</a></li>`;
+        )}', ${concert});">${formattedDate}</a></li>`;
       });
 
       concertListElement.insertAdjacentHTML(
@@ -83,15 +84,20 @@ function showMoreConcerts(venueName, displayedCount) {
     });
 }
 function formatDate(date) {
-  const options = { day: "numeric", month: "long", year: "numeric" };
-  return date.toLocaleDateString("en-GB", options).replace(/ /g, " of ");
+  const options = { year: "numeric", month: "long" };
+  let day = date.getDate();
+  let suffix = ["th", "st", "nd", "rd"][
+    day % 10 > 3 ? 0 : day - (day % 10) !== 10 ? day % 10 : 0
+  ];
+  return `${day}${suffix} of ${date.toLocaleDateString("en-GB", options)}`;
 }
 
-function showPerformances(encodedPerformances) {
+function showPerformances(encodedPerformances, formattedDate) {
   const performances = JSON.parse(atob(encodedPerformances));
-  let content = "<ul>";
+  let content = `<h1>Performances on the ${formattedDate}</h1>`; // Use the date in the heading
+  content += "<ul>";
   performances.forEach((perf) => {
-    content += `<li>${perf.title} by ${perf.composer}</li>`;
+    content += `<li id="performance-info">${perf.title} by ${perf.composer}</li>`;
   });
   content += "</ul>";
 

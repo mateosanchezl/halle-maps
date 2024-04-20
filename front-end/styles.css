@@ -30,13 +30,18 @@ html {
 #map-container {
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  height: 50vh; /* Set a fixed height for the map container */
+  max-width: 1300px;
+  height: 60vh; /* Set a fixed height for the map container */
+  border: 1px solid black;
 }
 
 #map {
   width: 70%;
-  height: 50vh; /* Fixed height for the map */
+  height: 100%; /* Fixed height for the map */
+}
+
+#performance-info {
+  padding: 10px;
 }
 
 #details-area {
