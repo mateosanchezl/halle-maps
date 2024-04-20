@@ -1,0 +1,3020 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.0036092,
+                    51.5325414
+                ]
+            },
+            "properties": {
+                "venue_name": "Abbey Road",
+                "venue_town": "London",
+                "concert_count": 20
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.247901788881243,
+                    53.478299050000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Albert Hall",
+                "venue_town": "Manchester",
+                "concert_count": 103
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.156231121262001,
+                    52.954312
+                ]
+            },
+            "properties": {
+                "venue_name": "Albert Hall",
+                "venue_town": "Nottingham",
+                "concert_count": 89
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.8227046930252007,
+                    54.0088778
+                ]
+            },
+            "properties": {
+                "venue_name": "Ashton Hall",
+                "venue_town": "Lancaster",
+                "concert_count": 17
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2645546442675571,
+                    51.13257285
+                ]
+            },
+            "properties": {
+                "venue_name": "Assembly Hall",
+                "venue_town": "Tunbridge Wells",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.012399405402629649,
+                    51.5908778
+                ]
+            },
+            "properties": {
+                "venue_name": "Assembly Hall",
+                "venue_town": "Walthamstow",
+                "concert_count": 28
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.476435354528702,
+                    52.923651250000006
+                ]
+            },
+            "properties": {
+                "venue_name": "Assembly Rooms",
+                "venue_town": "Derby",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.421278202611429,
+                    49.51824095
+                ]
+            },
+            "properties": {
+                "venue_name": "BASF",
+                "venue_town": "Ludwigshafen",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.22510766742459215,
+                    51.511135499999995
+                ]
+            },
+            "properties": {
+                "venue_name": "BBC Studios",
+                "venue_town": "London",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.622904702485964,
+                    46.5295577
+                ]
+            },
+            "properties": {
+                "venue_name": "Beaulieu Theatre",
+                "venue_town": "Lausanne",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.105034876375994,
+                    50.74084645
+                ]
+            },
+            "properties": {
+                "venue_name": "Beethovenhalle",
+                "venue_town": "Bonn",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.5143871070364272,
+                    52.4098302
+                ]
+            },
+            "properties": {
+                "venue_name": "Belgrade Theatre",
+                "venue_town": "Coventry",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.9602132334638434,
+                    51.6136204
+                ]
+            },
+            "properties": {
+                "venue_name": "Brangwyn Hall",
+                "venue_town": "Swansea",
+                "concert_count": 48
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.3027509,
+                    53.4737779
+                ]
+            },
+            "properties": {
+                "venue_name": "Broadway",
+                "venue_town": "Eccles",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.968556624290895,
+                    56.4599834
+                ]
+            },
+            "properties": {
+                "venue_name": "Caird Hall",
+                "venue_town": "Dundee",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.12654592231642325,
+                    51.513626
+                ]
+            },
+            "properties": {
+                "venue_name": "Cambridge Theatre",
+                "venue_town": "London",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.5947032,
+                    47.5428824
+                ]
+            },
+            "properties": {
+                "venue_name": "Casino",
+                "venue_town": "Basel",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.448648064857595,
+                    46.946849549999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Casino",
+                "venue_town": "Berne",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.7173359,
+                    52.2442646
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Bury St Edmunds",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.218002705525125,
+                    51.495807
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Cardiff",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.890667768596949,
+                    53.1917982
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Chester",
+                "concert_count": 14
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.5070981189193933,
+                    52.4086328
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Coventry",
+                "concert_count": 10
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.136153067898423,
+                    42.9616348
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Dubrovnik",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.5754654,
+                    54.7744597
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Durham",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.26374788246332936,
+                    52.398655500000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Ely",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.529845155334643,
+                    50.722523100000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Exeter",
+                "concert_count": 12
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.24674978116113,
+                    51.867337649999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Gloucester",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.5900516763350255,
+                    51.2411478
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Guildford",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.830440770916463,
+                    52.6854734
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Lichfield",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.6177296,
+                    52.6630443
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Limerick",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.5373269,
+                    53.2340567
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Lincoln",
+                "concert_count": 11
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.345863195216976,
+                    53.5270438
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Mullingar",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.23948891055585045,
+                    52.572481249999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Peterborough",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.520250172764007,
+                    54.1351034
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Ripon",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7972906867586302,
+                    51.06495445
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Salisbury",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.441937118141154,
+                    53.25709725
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "St Asaph",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.051261229663632,
+                    50.26412565
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Truro",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.1111386720540715,
+                    52.261493
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Waterford",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.6430021532323638,
+                    51.210590100000005
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Wells",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.3132457711194079,
+                    51.0607326
+                ]
+            },
+            "properties": {
+                "venue_name": "Cathedral",
+                "venue_town": "Winchester",
+                "concert_count": 12
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.5824638531858644,
+                    51.45608955
+                ]
+            },
+            "properties": {
+                "venue_name": "Central Hall",
+                "venue_town": "Bristol",
+                "concert_count": 14
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5245243932364949,
+                    51.38249465
+                ]
+            },
+            "properties": {
+                "venue_name": "Central Hall",
+                "venue_town": "Chatham",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.1553599178687977,
+                    53.6155032
+                ]
+            },
+            "properties": {
+                "venue_name": "Champness Hall",
+                "venue_town": "Rochdale",
+                "concert_count": 32
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.16560437930926344,
+                    52.18660055
+                ]
+            },
+            "properties": {
+                "venue_name": "Cherry Hinton Hall",
+                "venue_town": "Cambridge",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.465493282528424,
+                    51.89707645
+                ]
+            },
+            "properties": {
+                "venue_name": "City Hall",
+                "venue_town": "Cork",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.1615384,
+                    22.2818804
+                ]
+            },
+            "properties": {
+                "venue_name": "City Hall",
+                "venue_town": "Hong Kong",
+                "concert_count": 11
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.3394758,
+                    53.7435722
+                ]
+            },
+            "properties": {
+                "venue_name": "City Hall",
+                "venue_town": "Hull",
+                "concert_count": 24
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.585926079827911,
+                    56.56679835
+                ]
+            },
+            "properties": {
+                "venue_name": "City Hall",
+                "venue_town": "Perth",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.472432577156348,
+                    53.38084075
+                ]
+            },
+            "properties": {
+                "venue_name": "City Hall",
+                "venue_town": "Sheffield",
+                "concert_count": 893
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4714829339626652,
+                    52.4785921
+                ]
+            },
+            "properties": {
+                "venue_name": "Civic Hall",
+                "venue_town": "Bedworth",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.5193146727065536,
+                    53.068264299999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Civic Hall",
+                "venue_town": "Nantwich",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.5862061431153807,
+                    54.546689349999994
+                ]
+            },
+            "properties": {
+                "venue_name": "Civic Hall",
+                "venue_town": "Whitehaven",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.1308165862918873,
+                    52.58659075
+                ]
+            },
+            "properties": {
+                "venue_name": "Civic Hall",
+                "venue_town": "Wolverhampton",
+                "concert_count": 78
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.6969037184232711,
+                    51.535223200000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Cliffs Pavilion",
+                "venue_town": "Southend",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.5982672862666463,
+                    51.45470895
+                ]
+            },
+            "properties": {
+                "venue_name": "Colston Hall",
+                "venue_town": "Bristol",
+                "concert_count": 28
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.28340345715925674,
+                    50.7627894
+                ]
+            },
+            "properties": {
+                "venue_name": "Congress Theatre",
+                "venue_town": "Eastbourne",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.46742707411525675,
+                    52.136064250000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Corn Exchange",
+                "venue_town": "Bedford",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.39336478041473855,
+                    52.7564062
+                ]
+            },
+            "properties": {
+                "venue_name": "Corn Exchange",
+                "venue_town": "King's Lynn",
+                "concert_count": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.0711328,
+                    51.4193664
+                ]
+            },
+            "properties": {
+                "venue_name": "Crystal Palace",
+                "venue_town": "London",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.47122965124256166,
+                    50.837523250000004
+                ]
+            },
+            "properties": {
+                "venue_name": "De La Warr Pavilion",
+                "venue_town": "Bexhill-on-Sea",
+                "concert_count": 34
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.1220200960612958,
+                    52.62502235
+                ]
+            },
+            "properties": {
+                "venue_name": "De Montfort Hall",
+                "venue_town": "Leicester",
+                "concert_count": 172
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.582908990594504,
+                    48.1300409
+                ]
+            },
+            "properties": {
+                "venue_name": "Deutsches Museum",
+                "venue_town": "Munich",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.3258118,
+                    51.2347671
+                ]
+            },
+            "properties": {
+                "venue_name": "Dorking Halls",
+                "venue_town": "Dorking",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.692248087347942,
+                    52.30453625
+                ]
+            },
+            "properties": {
+                "venue_name": "Drill Hall",
+                "venue_town": "Wellingborough",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.230864222497448,
+                    57.4731036
+                ]
+            },
+            "properties": {
+                "venue_name": "Eden Court Theatre",
+                "venue_town": "Inverness",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.9814101,
+                    51.0343424
+                ]
+            },
+            "properties": {
+                "venue_name": "Erholungshaus",
+                "venue_town": "Leverkusen",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.3055601995158344,
+                    53.4462116
+                ]
+            },
+            "properties": {
+                "venue_name": "Essoldo Cinema",
+                "venue_town": "Stretford",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.391427662020734,
+                    51.25298085
+                ]
+            },
+            "properties": {
+                "venue_name": "Festhalle",
+                "venue_town": "Viersen",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.7772216561704477,
+                    50.8429048
+                ]
+            },
+            "properties": {
+                "venue_name": "Festival Theatre",
+                "venue_town": "Chichester",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.040982237102769,
+                    47.7987295
+                ]
+            },
+            "properties": {
+                "venue_name": "Festspielhaus",
+                "venue_town": "Salzburg",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.45987410839987,
+                    51.7713322
+                ]
+            },
+            "properties": {
+                "venue_name": "Filharmonia",
+                "venue_town": "Lodz",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.011280545053896,
+                    52.23436315
+                ]
+            },
+            "properties": {
+                "venue_name": "Filharmonia",
+                "venue_town": "Warsaw",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.0060319,
+                    53.6517693
+                ]
+            },
+            "properties": {
+                "venue_name": "Floral Hall",
+                "venue_town": "Southport",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.247247210739584,
+                    53.47767965
+                ]
+            },
+            "properties": {
+                "venue_name": "Free Trade Hall",
+                "venue_town": "Manchester",
+                "concert_count": 3221
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.261642751088101,
+                    53.3403737
+                ]
+            },
+            "properties": {
+                "venue_name": "Gaiety Theatre",
+                "venue_town": "Dublin",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.980936,
+                    53.5559406
+                ]
+            },
+            "properties": {
+                "venue_name": "Grosse Musikhalle",
+                "venue_town": "Hamburg",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.696808554707215,
+                    53.75970745
+                ]
+            },
+            "properties": {
+                "venue_name": "Guild Hall",
+                "venue_town": "Preston",
+                "concert_count": 24
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.358772899376806,
+                    51.38210155
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "Bath",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.11927031643356645,
+                    52.2047526
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "Cambridge",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.319395670905091,
+                    54.99760259999999
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "Derry/Londonderry",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.09202398601739807,
+                    51.51590665
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "London",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.0920802648880952,
+                    50.7972525
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "Portsmouth",
+                "concert_count": 11
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4060055634934607,
+                    50.90798995
+                ]
+            },
+            "properties": {
+                "venue_name": "Guildhall",
+                "venue_town": "Southampton",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.7248137,
+                    37.9711894
+                ]
+            },
+            "properties": {
+                "venue_name": "Herod Atticus Odeon",
+                "venue_town": "Athens",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4784938201467677,
+                    52.9201446
+                ]
+            },
+            "properties": {
+                "venue_name": "Hippodrome Theatre",
+                "venue_town": "Derby",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.20411700053696852,
+                    51.5030158
+                ]
+            },
+            "properties": {
+                "venue_name": "Holland Park",
+                "venue_town": "London",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.5189652,
+                    50.0994964
+                ]
+            },
+            "properties": {
+                "venue_name": "Jahrhunderthalle",
+                "venue_town": "Frankfurt",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.294295312007534,
+                    55.8685321
+                ]
+            },
+            "properties": {
+                "venue_name": "Kelvin Hall",
+                "venue_town": "Glasgow",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9229599026191502,
+                    52.450589
+                ]
+            },
+            "properties": {
+                "venue_name": "King Edward's School",
+                "venue_town": "Birmingham",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.11654403935505439,
+                    52.204779599999995
+                ]
+            },
+            "properties": {
+                "venue_name": "King's College Chapel",
+                "venue_town": "Cambridge",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.9690184,
+                    54.5676119
+                ]
+            },
+            "properties": {
+                "venue_name": "King's Hall",
+                "venue_town": "Belfast",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.349763,
+                    53.754346
+                ]
+            },
+            "properties": {
+                "venue_name": "King's Hall",
+                "venue_town": "Derby",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.0011381,
+                    51.3694321
+                ]
+            },
+            "properties": {
+                "venue_name": "Kingsway Hall",
+                "venue_town": "London",
+                "concert_count": 12
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.8861121,
+                    48.3592067
+                ]
+            },
+            "properties": {
+                "venue_name": "Kongresshalle",
+                "venue_town": "Augsburg",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.7292683,
+                    59.9129826
+                ]
+            },
+            "properties": {
+                "venue_name": "Konserthuset",
+                "venue_town": "Oslo",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.063179155730722,
+                    59.335061350000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Konserthuset",
+                "venue_town": "Stockholm",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.32229257228622,
+                    35.341777199999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Kyrenia Castle",
+                "venue_town": "Cyprus",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.3960672,
+                    47.269507
+                ]
+            },
+            "properties": {
+                "venue_name": "Landestheater",
+                "venue_town": "Innsbruck",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1734307,
+                    51.0759032
+                ]
+            },
+            "properties": {
+                "venue_name": "Leas Cliff Hall",
+                "venue_town": "Folkestone",
+                "concert_count": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.7278332,
+                    51.9965376
+                ]
+            },
+            "properties": {
+                "venue_name": "Leisure Centre",
+                "venue_town": "Bletchley",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.1678901,
+                    48.7791209
+                ]
+            },
+            "properties": {
+                "venue_name": "Liederhalle",
+                "venue_town": "Stuttgart",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.1904117028895975,
+                    51.5257722
+                ]
+            },
+            "properties": {
+                "venue_name": "Maida Vale Studios",
+                "venue_town": "London",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.271237261517636,
+                    53.48472125
+                ]
+            },
+            "properties": {
+                "venue_name": "Maxwell Hall",
+                "venue_town": "Salford",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.105157586014384,
+                    49.4372928
+                ]
+            },
+            "properties": {
+                "venue_name": "Meistersingerhalle",
+                "venue_town": "Nurnberg",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.7707369,
+                    51.4330116
+                ]
+            },
+            "properties": {
+                "venue_name": "Mercatorhalle",
+                "venue_town": "Duisburg",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.954137578991153,
+                    53.07684715
+                ]
+            },
+            "properties": {
+                "venue_name": "Minster",
+                "venue_town": "Southwell",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.0820834019803218,
+                    53.9623561
+                ]
+            },
+            "properties": {
+                "venue_name": "Minster",
+                "venue_town": "York",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.11017231779578437,
+                    51.4979117
+                ]
+            },
+            "properties": {
+                "venue_name": "Morley College",
+                "venue_town": "London",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.105056233356427,
+                    57.1453568
+                ]
+            },
+            "properties": {
+                "venue_name": "Music Hall",
+                "venue_town": "Aberdeen",
+                "concert_count": 10
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7548057556552106,
+                    52.7070111
+                ]
+            },
+            "properties": {
+                "venue_name": "Music Hall",
+                "venue_town": "Shrewsbury",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.37272518981993,
+                    48.20048645
+                ]
+            },
+            "properties": {
+                "venue_name": "Musikverein",
+                "venue_town": "Vienna",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2598378,
+                    51.7538627
+                ]
+            },
+            "properties": {
+                "venue_name": "New Theatre",
+                "venue_town": "Oxford",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4584463492112585,
+                    52.48039685
+                ]
+            },
+            "properties": {
+                "venue_name": "Nicholas Chamberlaine School",
+                "venue_town": "Bedworth",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.8910302602957243,
+                    53.1960472
+                ]
+            },
+            "properties": {
+                "venue_name": "Northgate Arena",
+                "venue_town": "Chester",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.424230325346375,
+                    51.91122805
+                ]
+            },
+            "properties": {
+                "venue_name": "Odeon-Theater",
+                "venue_town": "Goslar",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.25136584314324,
+                    53.4788894
+                ]
+            },
+            "properties": {
+                "venue_name": "Opera House",
+                "venue_town": "Manchester",
+                "concert_count": 18
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.134241339163935,
+                    53.22155145
+                ]
+            },
+            "properties": {
+                "venue_name": "Our Lady's",
+                "venue_town": "Bangor",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.47700850855826,
+                    42.159928
+                ]
+            },
+            "properties": {
+                "venue_name": "Parish Church",
+                "venue_town": "Ludlow",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.34274857017779653,
+                    51.9554083
+                ]
+            },
+            "properties": {
+                "venue_name": "Parish Church",
+                "venue_town": "Thaxted",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.597575425882047,
+                    53.3872328
+                ]
+            },
+            "properties": {
+                "venue_name": "Parr Hall",
+                "venue_town": "Warrington",
+                "concert_count": 23
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.5266585323835775,
+                    50.4608247
+                ]
+            },
+            "properties": {
+                "venue_name": "Pavilion",
+                "venue_town": "Torquay",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9190095967221947,
+                    53.25587165
+                ]
+            },
+            "properties": {
+                "venue_name": "Pavilion Gardens",
+                "venue_town": "Buxton",
+                "concert_count": 54
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.4839909238433,
+                    53.3262804
+                ]
+            },
+            "properties": {
+                "venue_name": "Pavilion Theatre",
+                "venue_town": "Rhyl",
+                "concert_count": 11
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.96973532842742,
+                    53.40115125
+                ]
+            },
+            "properties": {
+                "venue_name": "Philharmonic Hall",
+                "venue_town": "Liverpool",
+                "concert_count": 31
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.369605892605993,
+                    52.509988750000005
+                ]
+            },
+            "properties": {
+                "venue_name": "Philharmonie",
+                "venue_town": "Berlin",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.529976251064409,
+                    50.46128405
+                ]
+            },
+            "properties": {
+                "venue_name": "Princess Theatre",
+                "venue_town": "Torquay",
+                "concert_count": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.0824676,
+                    19.4072053
+                ]
+            },
+            "properties": {
+                "venue_name": "Puebla",
+                "venue_town": "Mexico City",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.20564009114780946,
+                    51.52639725
+                ]
+            },
+            "properties": {
+                "venue_name": "Queen's Hall",
+                "venue_town": "London",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.510695024637286,
+                    10.67304905
+                ]
+            },
+            "properties": {
+                "venue_name": "Queen's Hall",
+                "venue_town": "Port of Spain",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.8901396106982693,
+                    56.648085449999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Reid Hall",
+                "venue_town": "Forfar",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.772542919332325,
+                    51.2321639
+                ]
+            },
+            "properties": {
+                "venue_name": "Rheinhalle",
+                "venue_town": "Dusseldorf",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.047210233531718,
+                    53.89669505
+                ]
+            },
+            "properties": {
+                "venue_name": "Rossall School",
+                "venue_town": "Fleetwood",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.15186193316208124,
+                    51.52346355
+                ]
+            },
+            "properties": {
+                "venue_name": "Royal Academy of Music",
+                "venue_town": "London",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.17740582939224336,
+                    51.501006950000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Royal Albert Hall",
+                "venue_town": "London",
+                "concert_count": 79
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.11678719314897079,
+                    51.5057559
+                ]
+            },
+            "properties": {
+                "venue_name": "Royal Festival Hall",
+                "venue_town": "London",
+                "concert_count": 128
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2598806846197907,
+                    52.36819045
+                ]
+            },
+            "properties": {
+                "venue_name": "Rugby School",
+                "venue_town": "Rugby",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.0088602,
+                    51.4453835
+                ]
+            },
+            "properties": {
+                "venue_name": "Saalbau",
+                "venue_town": "Essen",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2550068238954122,
+                    51.7542818
+                ]
+            },
+            "properties": {
+                "venue_name": "Sheldonian Theatre",
+                "venue_town": "Oxford",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4276385,
+                    50.0877619
+                ]
+            },
+            "properties": {
+                "venue_name": "Smetana Hall",
+                "venue_town": "Prague",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.08964679004525096,
+                    51.506135549999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Southwark Cathedral",
+                "venue_town": "London",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7793918,
+                    53.6460602
+                ]
+            },
+            "properties": {
+                "venue_name": "Sports Centre",
+                "venue_town": "Huddersfield",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.162501020885536,
+                    50.374893
+                ]
+            },
+            "properties": {
+                "venue_name": "St Andrew's Church",
+                "venue_town": "Plymouth",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.6067922987337189,
+                    51.48365055
+                ]
+            },
+            "properties": {
+                "venue_name": "St George's Chapel",
+                "venue_town": "Windsor",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7509775500000075,
+                    53.792522500000004
+                ]
+            },
+            "properties": {
+                "venue_name": "St George's Hall",
+                "venue_town": "Bradford",
+                "concert_count": 394
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7408059798402267,
+                    54.3313311
+                ]
+            },
+            "properties": {
+                "venue_name": "St George's Hall",
+                "venue_town": "Kendal",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7327767400662615,
+                    53.0196798
+                ]
+            },
+            "properties": {
+                "venue_name": "St John's Church",
+                "venue_town": "Buxton",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.39700993110749205,
+                    52.7574971
+                ]
+            },
+            "properties": {
+                "venue_name": "St Nicholas Chapel",
+                "venue_town": "King's Lynn",
+                "concert_count": 18
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.539209571824644,
+                    52.2576118
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadthalle",
+                "venue_town": "Braunschweig",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.460823434927361,
+                    51.316683749999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadthalle",
+                "venue_town": "Kassel",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.04204910930402,
+                    52.27133135
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadthalle",
+                "venue_town": "Osnabruck",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.142915685898876,
+                    51.25301385
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadthalle",
+                "venue_town": "Wuppertal",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.5093072,
+                    47.2814962
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadtsaal",
+                "venue_town": "Innsbruck",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.68640849953395,
+                    53.87008015
+                ]
+            },
+            "properties": {
+                "venue_name": "Stadttheater",
+                "venue_town": "Lubeck",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.437802913000567,
+                    47.0698006
+                ]
+            },
+            "properties": {
+                "venue_name": "Stefaniensaal",
+                "venue_town": "Graz",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.139941274021831,
+                    53.39147765
+                ]
+            },
+            "properties": {
+                "venue_name": "Stockport School",
+                "venue_town": "Stockport",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.0973286947003418,
+                    53.487807849999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Tameside Theatre",
+                "venue_town": "Ashton-under-Lyne",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.3714872,
+                    53.3250254
+                ]
+            },
+            "properties": {
+                "venue_name": "Tatton Hall",
+                "venue_town": "Knutsford",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.42261231332781,
+                    41.5496926
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Circo",
+                "venue_town": "Braga",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -58.38318689897575,
+                    -34.601085499999996
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Colon",
+                "venue_town": "Buenas Aires",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -66.9174728711578,
+                    10.5020721
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Municipal",
+                "venue_town": "Caracas",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.00494831299454,
+                    -12.020913799999999
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Municipal",
+                "venue_town": "Lima",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -42.536578235953726,
+                    -22.279632399999997
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Municipal",
+                "venue_town": "Rio de Janeiro",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.6470148,
+                    -33.4415519
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Municipal",
+                "venue_town": "Santiago",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.6386378327257,
+                    -23.54528045
+                ]
+            },
+            "properties": {
+                "venue_name": "Teatro Municipal",
+                "venue_town": "Sao Paulo",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4597213585395628,
+                    53.7842828
+                ]
+            },
+            "properties": {
+                "venue_name": "Temple Newsam House",
+                "venue_town": "Leeds",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.13842383505953454,
+                    50.823511800000006
+                ]
+            },
+            "properties": {
+                "venue_name": "The Dome",
+                "venue_town": "Brighton",
+                "concert_count": 20
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.360737214659684,
+                    51.3786509
+                ]
+            },
+            "properties": {
+                "venue_name": "The Forum",
+                "venue_town": "Bath",
+                "concert_count": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3113461,
+                    52.0799838
+                ]
+            },
+            "properties": {
+                "venue_name": "The Hague",
+                "venue_town": "Netherlands",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.3541163,
+                    51.3808922
+                ]
+            },
+            "properties": {
+                "venue_name": "The Pavilion",
+                "venue_town": "Bath",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7334534571287117,
+                    53.4540178
+                ]
+            },
+            "properties": {
+                "venue_name": "Theatre Royal",
+                "venue_town": "St Helens",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.0856182,
+                    53.961883
+                ]
+            },
+            "properties": {
+                "venue_name": "Theatre Royal",
+                "venue_town": "York",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3029039,
+                    48.8658174
+                ]
+            },
+            "properties": {
+                "venue_name": "Theatre des Champs Elysees",
+                "venue_town": "Paris",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.5378603,
+                    47.3660944
+                ]
+            },
+            "properties": {
+                "venue_name": "Tonhalle",
+                "venue_town": "Zurich",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.0552721635863493,
+                    53.815919300000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Tower Ballroom",
+                "venue_town": "Blackpool",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9036934407051729,
+                    52.479562099999995
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Birmingham",
+                "concert_count": 23
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.07778586877211,
+                    51.89712835
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Cheltenham",
+                "concert_count": 66
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.147646676881359,
+                    52.45711765
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Dudley",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.749092,
+                    51.6277515
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "High Wycombe",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.5491021,
+                    53.7995964
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Leeds",
+                "concert_count": 79
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.02075679216265202,
+                    51.4451556
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Lewisham",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.096966753319678,
+                    51.583744550000006
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Oxford",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.969740838033849,
+                    51.4568338
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Reading",
+                "concert_count": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.158441732274248,
+                    53.4059929
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Stockport",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.9790426,
+                    52.585627
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Walsall",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.4031676636043011,
+                    51.65972145
+                ]
+            },
+            "properties": {
+                "venue_name": "Town Hall",
+                "venue_town": "Watford",
+                "concert_count": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.930504448582067,
+                    54.594614
+                ]
+            },
+            "properties": {
+                "venue_name": "Ulster Hall",
+                "venue_town": "Belfast",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.7263876782877858,
+                    52.5860865
+                ]
+            },
+            "properties": {
+                "venue_name": "Uppingham School",
+                "venue_town": "Uppingham",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.204930413085794,
+                    55.94725905
+                ]
+            },
+            "properties": {
+                "venue_name": "Usher Hall",
+                "venue_town": "Edinburgh",
+                "concert_count": 62
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.141053195556012,
+                    46.20140125
+                ]
+            },
+            "properties": {
+                "venue_name": "Victoria Hall",
+                "venue_town": "Geneva",
+                "concert_count": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.950110164441763,
+                    53.44655645
+                ]
+            },
+            "properties": {
+                "venue_name": "Victoria Hall",
+                "venue_town": "Glossop",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -63.58930177998134,
+                    44.6556686
+                ]
+            },
+            "properties": {
+                "venue_name": "Victoria Hall",
+                "venue_town": "Halifax",
+                "concert_count": 21
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.1752102388871757,
+                    53.02310215
+                ]
+            },
+            "properties": {
+                "venue_name": "Victoria Hall",
+                "venue_town": "Hanley",
+                "concert_count": 239
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4671598055095818,
+                    53.381793900000005
+                ]
+            },
+            "properties": {
+                "venue_name": "Victoria Hall",
+                "venue_town": "Sheffield",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.612733831970193,
+                    40.648541
+                ]
+            },
+            "properties": {
+                "venue_name": "Villa Rufolo Park",
+                "venue_town": "Ravello",
+                "concert_count": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.0056189279897474,
+                    53.0525971
+                ]
+            },
+            "properties": {
+                "venue_name": "William Aston",
+                "venue_town": "Wrexham",
+                "concert_count": 16
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.6088758149577667,
+                    52.291044400000004
+                ]
+            },
+            "properties": {
+                "venue_name": "Windmill Club",
+                "venue_town": "Rushden",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.8805734,
+                    50.7181366
+                ]
+            },
+            "properties": {
+                "venue_name": "Winter Gardens",
+                "venue_town": "Bournemouth",
+                "concert_count": 10
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.285183,
+                    50.7627855
+                ]
+            },
+            "properties": {
+                "venue_name": "Winter Gardens",
+                "venue_town": "Eastbourne",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5611774,
+                    51.5192851
+                ]
+            },
+            "properties": {
+                "venue_name": "Winter Gardens",
+                "venue_town": "Malvern",
+                "concert_count": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.3867389,
+                    51.3916599
+                ]
+            },
+            "properties": {
+                "venue_name": "Winter Gardens",
+                "venue_town": "Margate",
+                "concert_count": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.870984696849636,
+                    54.0720903
+                ]
+            },
+            "properties": {
+                "venue_name": "Winter Gardens",
+                "venue_town": "Morecambe",
+                "concert_count": 6
+            }
+        }
+    ]
+}

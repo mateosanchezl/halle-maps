@@ -5,28 +5,46 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
-      #map {
-        height: 100vh;
+      #map1, #map2 {
+        height: 50vh; /* each map takes up half of the viewport height */
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map1"></div>
+    <div id="map2"></div>
+
+    <style>
+      .info.legend {
+          padding: 6px 8px;
+          font: 14px/16px Arial, Helvetica, sans-serif;
+          background: rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+      }
+      .info.legend i {
+          width: 14px;
+          height: 14px;
+          float: left;
+          margin-right: 8px;
+          opacity: 0.7;
+      }
+    </style>
+
     <script>
-      var map = L.map("map").setView([53.4808, -2.2426], 13); // Example: center on Manchester
+      var map1 = L.map("map1").setView([53.4808, -2.2426], 13); // Example: center on Manchester
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "© OpenStreetMap contributors",
-      }).addTo(map);
+      }).addTo(map1);
 
-      fetch("venue_data.json")
+      fetch("venue_data_new.json")
         .then((response) => response.json())
         .then((data) => {
           data.forEach((venue) => {
             if (venue.latitude && venue.longitude) {
-              var marker = L.marker([venue.latitude, venue.longitude]).addTo(
-                map
-              );
+              var marker = L.marker([venue.latitude, venue.longitude]).addTo(map1);
               marker.bindPopup(createPopupContent(venue));
             }
           });
@@ -45,5 +63,74 @@
         return content;
       }
     </script>
+<script>
+  const map2 = L.map('map2').setView([51.505, -0.09], 6); // Widen the initial zoom to see more areas
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data © OpenStreetMap contributors'
+  }).addTo(map2);
+
+  fetch('venues.geojson')
+    .then(response => response.json())
+    .then(data => {
+      L.geoJson(data, {
+        pointToLayer: function(feature, latlng) {
+          return L.circleMarker(latlng, {
+            radius: getRadius(feature.properties.concert_count),
+            fillColor: getColor(feature.properties.concert_count),
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        },
+        onEachFeature: function(feature, layer) {
+          if (feature.properties) {
+            layer.bindPopup('<b>Venue:</b> ' + feature.properties.venue_name +
+                            '<br/><b>Town:</b> ' + feature.properties.venue_town +
+                            '<br/><b>Concerts:</b> ' + feature.properties.concert_count);
+          }
+        }
+      }).addTo(map2);
+    });
+
+  function getColor(concertCount) {
+    return concertCount === 3221 ? '#4a148c':
+           concertCount > 100 ? '#800026' :
+           concertCount > 75 ? '#BD0026' :
+           concertCount > 50 ? '#E31A1C' :
+           concertCount > 25 ? '#FC4E2A' :
+           '#FFEDA0'; // Lightest color for the lowest counts
+  }
+
+  var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+  var div = L.DomUtil.create('div', 'info legend'),
+      grades = [0, 25, 50, 75, 100, 3221], // Define the breakpoints
+      labels = [];
+
+  // loop through our density intervals and generate a label with a colored square for each interval
+  for (var i = 0; i < grades.length; i++) {
+    div.innerHTML +=
+        '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+        grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+  }
+
+  return div;
+};
+
+legend.addTo(map2);
+
+
+  function getRadius(concertCount) {
+    return concertCount === 3221 ? 20 :
+           concertCount > 100 ? 12 :
+           concertCount > 75 ? 10 :
+           concertCount > 50 ? 8 :
+           concertCount > 25 ? 6 :
+           4; // Smallest radius for the lowest counts
+  }
+</script>
+
   </body>
 </html>
