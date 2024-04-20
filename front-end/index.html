@@ -1,49 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Interactive Concert Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <style>
-      #map {
-        height: 100vh;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="map"></div>
-    <script>
-      var map = L.map("map").setView([53.4808, -2.2426], 13); // Example: center on Manchester
+    <div id="top-content">Halle Maps</div>
+    <div id="main-container">
+      <div id="map-container">
+        <div id="map"></div>
+        <div id="details-area"></div>
+      </div>
+    </div>
+    <div id="bottom-content">Bottom Content</div>
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "© OpenStreetMap contributors",
-      }).addTo(map);
-
-      fetch("venue_data.json")
-        .then((response) => response.json())
-        .then((data) => {
-          data.forEach((venue) => {
-            if (venue.latitude && venue.longitude) {
-              var marker = L.marker([venue.latitude, venue.longitude]).addTo(
-                map
-              );
-              marker.bindPopup(createPopupContent(venue));
-            }
-          });
-        });
-
-      function createPopupContent(venue) {
-        let content = `<strong>${venue.venue_name}, ${venue.venue_town}</strong><ul>`;
-        venue.concerts.forEach((concert) => {
-          content += `<li>${concert.date}<ul>`;
-          concert.performances.forEach((perf) => {
-            content += `<li>${perf.title}: ${perf.composer}</li>`;
-          });
-          content += `</ul></li>`;
-        });
-        content += `</ul>`;
-        return content;
-      }
-    </script>
+    <script src="map.js"></script>
   </body>
 </html>
