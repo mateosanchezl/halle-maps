@@ -1,7 +1,8 @@
 const map = L.map("map").setView([53.4808, -2.2426], 13); // Center on Manchester
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "© OpenStreetMap contributors",
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  attribution: "© OpenStreetMap contributors, © CARTO",
+  maxZoom: 19,
 }).addTo(map);
 
 fetch("venue_data.json")
@@ -94,81 +95,103 @@ function formatDate(date) {
 
 function showPerformances(encodedPerformances, formattedDate) {
   const performances = JSON.parse(atob(encodedPerformances));
-  let content = `<h1 id="performances-on">Performances on the ${formattedDate}</h1>`; // Use the date in the heading
-  content += "<ul>";
+  let content = `<h1 id="performances-on">Performances on the ${formattedDate}</h1>`;
+  content += "<ul class='performance-list'>";
   performances.forEach((perf) => {
-    content += `<li id="performance-info">${perf.title} by ${perf.composer}</li>`;
+    // Encode the song title for use in a URL
+    const encodedTitle = encodeURIComponent(perf.title);
+    content += `<li class="performance-item"><a href="https://www.youtube.com/results?search_query=${encodedTitle}" target="_blank" class="performance-title-link"><span class="performance-title">${perf.title}</span></a>  <span class="composer-name">by ${perf.composer}</span></li>`;
   });
   content += "</ul>";
 
   const detailsDiv = document.getElementById("details-area");
   detailsDiv.innerHTML = content;
   detailsDiv.style.display = "block"; // Make sure it's visible
+  setTimeout(() => (detailsDiv.style.opacity = 1), 10); // Fade in
 }
 
-const map2 = L.map('map2').setView([51.505, -0.09], 6); // Widen the initial zoom to see more areas
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data © OpenStreetMap contributors'
-  }).addTo(map2);
+const map2 = L.map("map2").setView([51.505, -0.09], 6); // Widen the initial zoom to see more areas
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  attribution: "© OpenStreetMap contributors, © CARTO",
+  maxZoom: 19,
+}).addTo(map2);
 
-  fetch('venues.geojson')
-    .then(response => response.json())
-    .then(data => {
-      L.geoJson(data, {
-        pointToLayer: function(feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: getRadius(feature.properties.concert_count),
-            fillColor: getColor(feature.properties.concert_count),
-            color: "#000",
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 0.8
-          });
-        },
-        onEachFeature: function(feature, layer) {
-          if (feature.properties) {
-            layer.bindPopup('<b>Venue:</b> ' + feature.properties.venue_name +
-                            '<br/><b>Town:</b> ' + feature.properties.venue_town +
-                            '<br/><b>Concerts:</b> ' + feature.properties.concert_count);
-          }
+fetch("venues.geojson")
+  .then((response) => response.json())
+  .then((data) => {
+    L.geoJson(data, {
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, {
+          radius: getRadius(feature.properties.concert_count),
+          fillColor: getColor(feature.properties.concert_count),
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8,
+        });
+      },
+      onEachFeature: function (feature, layer) {
+        if (feature.properties) {
+          layer.bindPopup(
+            "<b>Venue:</b> " +
+              feature.properties.venue_name +
+              "<br/><b>Town:</b> " +
+              feature.properties.venue_town +
+              "<br/><b>Concerts:</b> " +
+              feature.properties.concert_count
+          );
         }
-      }).addTo(map2);
-    });
+      },
+    }).addTo(map2);
+  });
 
-  function getColor(concertCount) {
-    return concertCount === 3221 ? '#4a148c':
-           concertCount > 100 ? '#800026' :
-           concertCount > 75 ? '#BD0026' :
-           concertCount > 50 ? '#E31A1C' :
-           concertCount > 25 ? '#FC4E2A' :
-           '#FFEDA0'; // Lightest color for the lowest counts
-  }
+function getColor(concertCount) {
+  return concertCount > 1000
+    ? "#006d77" // Dark Cyan for major events
+    : concertCount > 200
+    ? "#83c5be" // Medium Aquamarine for highly popular events
+    : concertCount > 50
+    ? "#edf6f9" // Light Cyan for popular events
+    : concertCount > 10
+    ? "#ffddd2" // Light Coral for moderate events
+    : "#e29578"; // Sandy Brown for small events
+}
 
-  var legend = L.control({position: 'bottomright'});
+function getRadius(concertCount) {
+  return concertCount > 1000
+    ? 20
+    : concertCount > 200
+    ? 15
+    : concertCount > 50
+    ? 12
+    : concertCount > 10
+    ? 8
+    : 6; // Smaller radius for the least popular events
+}
+
+var legend = L.control({ position: "bottomright" });
 
 legend.onAdd = function (map) {
-  var div = L.DomUtil.create('div', 'info legend'),
-      grades = [0, 25, 50, 75, 100, 3221], // Define the breakpoints
-      labels = [];
+  var div = L.DomUtil.create("div", "info legend");
+  var grades = [0, 10, 50, 200, 1000, 3221]; // Define the breakpoints
+  var labels = ["<strong>Number of Concerts</strong>"]; // Start with the title
 
-  // loop through our density intervals and generate a label with a colored square for each interval
-  for (var i = 0; i < grades.length; i++) {
-    div.innerHTML +=
-        '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-        grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-  }
+  // Generate HTML for each range
+  grades.forEach((grade, index) => {
+    var from = grade;
+    var to = grades[index + 1];
+    labels.push(
+      '<div class="legend-item"><i style="background:' +
+        getColor(from + 1) +
+        '"></i> ' +
+        from +
+        (to ? "&ndash;" + to : "+") +
+        "</div>"
+    );
+  });
 
+  div.innerHTML = labels.join(""); // Join all parts together without additional breaks
   return div;
 };
 
 legend.addTo(map2);
-
-
-  function getRadius(concertCount) {
-    return concertCount === 3221 ? 20 :
-           concertCount > 100 ? 12 :
-           concertCount > 75 ? 10 :
-           concertCount > 50 ? 8 :
-           concertCount > 25 ? 6 :
-           4; // Smallest radius for the lowest counts
-  }
