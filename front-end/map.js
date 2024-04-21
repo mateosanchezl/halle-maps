@@ -28,22 +28,26 @@ function createPopupContent(venue) {
     /[^a-zA-Z0-9]/g,
     "-"
   )}">`;
-  content += generateConcertListHTML(venue.concerts);
+  content += generateConcertListHTML(venue.concerts, venue.venue_name); // Pass venue name to function
   content += "</div>"; // Closing concert-list div
   return content;
 }
-function generateConcertListHTML(concerts) {
+
+function generateConcertListHTML(concerts, venueName) {
   let content = "<ul>";
   concerts.forEach((concert) => {
     let formattedDate = formatDate(new Date(concert.date));
-    // Pass the concert date as part of the onclick handler
     content += `<li><a href="javascript:void(0);" onclick="showPerformances('${btoa(
       JSON.stringify(concert.performances)
-    )}', '${formattedDate}');">${formattedDate}</a></li>`;
+    )}', '${formattedDate}', '${venueName.replace(
+      /'/g,
+      "\\'"
+    )}');">${formattedDate}</a></li>`;
   });
   content += "</ul>";
   return content;
 }
+
 function showMoreConcerts(venueName, displayedCount) {
   fetch("venue_data.json")
     .then((response) => response.json())
@@ -93,14 +97,14 @@ function formatDate(date) {
   return `${day}${suffix} of ${date.toLocaleDateString("en-GB", options)}`;
 }
 
-function showPerformances(encodedPerformances, formattedDate) {
+function showPerformances(encodedPerformances, formattedDate, venueName) {
   const performances = JSON.parse(atob(encodedPerformances));
-  let content = `<h1 id="performances-on">Performances on the ${formattedDate}</h1>`;
+  let headerContent = `Performances on the ${formattedDate} at '${venueName}'`; // Header shows date and venue name
+  let content = `<h1 id="performances-on">${headerContent}</h1>`;
   content += "<ul class='performance-list'>";
   performances.forEach((perf) => {
-    // Encode the song title for use in a URL
     const encodedTitle = encodeURIComponent(perf.title);
-    content += `<li class="performance-item"><a href="https://www.youtube.com/results?search_query=${encodedTitle}" target="_blank" class="performance-title-link"><span class="performance-title">${perf.title}</span></a>  <span class="composer-name">by ${perf.composer}</span></li>`;
+    content += `<li class="performance-item"><a href="https://www.youtube.com/results?search_query=${encodedTitle}" target="_blank" class="performance-title-link"><span class="performance-title">${perf.title}</span></a> <span class="composer-name">by ${perf.composer}</span></li>`;
   });
   content += "</ul>";
 
