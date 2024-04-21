@@ -1,3 +1,13 @@
+var icon = L.icon({
+  iconUrl: "./blue_marker.png",
+
+  iconSize: [20, 20], // size of the icon
+  shadowSize: [50, 64], // size of the shadow
+  iconAnchor: [20, 20], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62], // the same for the shadow
+  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+});
+
 const map = L.map("map").setView([53.4808, -2.2426], 13); // Center on Manchester
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
@@ -10,7 +20,9 @@ fetch("venue_data.json")
   .then((data) => {
     data.forEach((venue) => {
       if (venue.latitude && venue.longitude) {
-        const marker = L.marker([venue.latitude, venue.longitude]).addTo(map);
+        const marker = L.marker([venue.latitude, venue.longitude], {
+          icon: icon,
+        }).addTo(map);
         marker.bindPopup(createPopupContent(venue));
       }
     });
@@ -37,7 +49,7 @@ function generateConcertListHTML(concerts, venueName) {
   let content = "<ul>";
   concerts.forEach((concert) => {
     let formattedDate = formatDate(new Date(concert.date));
-    content += `<li><a href="javascript:void(0);" onclick="showPerformances('${btoa(
+    content += `<li><a href="javascript:void(0);" onclick="handleDateClick('${btoa(
       JSON.stringify(concert.performances)
     )}', '${formattedDate}', '${venueName.replace(
       /'/g,
@@ -47,47 +59,89 @@ function generateConcertListHTML(concerts, venueName) {
   content += "</ul>";
   return content;
 }
-
-function showMoreConcerts(venueName, displayedCount) {
-  fetch("venue_data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const venue = data.find((v) => v.venue_name === venueName);
-      if (!venue) return;
-
-      const concertListElement = document.getElementById(
-        `concert-list-${venueName}`
-      );
-      const totalConcerts = venue.concerts.length;
-      const nextLimit = Math.min(displayedCount + 5, totalConcerts);
-
-      let additionalConcertsContent = "";
-      const additionalConcerts = venue.concerts.slice(
-        displayedCount,
-        nextLimit
-      );
-      additionalConcerts.forEach((concert) => {
-        let formattedDate = formatDate(new Date(concert.date));
-        additionalConcertsContent += `<li><a href="javascript:void(0);" onclick="showPerformances('${btoa(
-          JSON.stringify(concert.performances)
-        )}', ${concert});">${formattedDate}</a></li>`;
-      });
-
-      concertListElement.insertAdjacentHTML(
-        "beforeend",
-        additionalConcertsContent
-      );
-
-      if (nextLimit < totalConcerts) {
-        concertListElement.nextElementSibling.setAttribute(
-          "onclick",
-          `showMoreConcerts('${venueName}', ${nextLimit});`
-        );
-      } else {
-        concertListElement.nextElementSibling.remove(); // Remove the "See More" button if there are no more concerts
-      }
-    });
+function handleDateClick(encodedPerformances, formattedDate, venueName) {
+  showPerformances(encodedPerformances, formattedDate, venueName);
+  fetchTemperatureDetails(formattedDate, venueName);
 }
+
+async function fetchTemperatureDetails(formattedDate, venueName) {
+  const dateParts = formattedDate.split(" "); // ['28th', 'of', 'June', '1959']
+  const month = new Date(`${dateParts[2]} 1, 2012`).getMonth() + 1;
+  const year = parseInt(dateParts[3]);
+
+  const response = await fetch("venue_data.json");
+  const venues = await response.json();
+  const venue = venues.find((v) => v.venue_name === venueName);
+
+  if (venue) {
+    try {
+      const weatherResponse = await fetch(
+        `http://127.0.0.1:5000/predict?year=${year}&month=${month}&latitude=${venue.latitude}&longitude=${venue.longitude}`
+      );
+      const weatherData = await weatherResponse.json();
+      if (weatherData.error) {
+        console.error("Error:", weatherData.error);
+        updateWeatherDisplay("Weather data unavailable");
+      } else {
+        const weatherText = `Max Temp: ${weatherData.tmax} °C, Min Temp: ${weatherData.tmin} °C`;
+        updateWeatherDisplay(weatherText);
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      updateWeatherDisplay("Failed to fetch weather data");
+    }
+  } else {
+    console.error("Venue not found");
+    updateWeatherDisplay("Venue data not found");
+  }
+}
+function updateWeatherDisplay(text) {
+  const weatherDiv = document.getElementById("weatherDisplay");
+  if (weatherDiv) {
+    weatherDiv.innerHTML = `<strong>Weather Forecast:</strong> ${text}`;
+    weatherDiv.style.display = "block"; // Make sure to display the block if it was initially hidden.
+  } else {
+    console.error("Failed to find the 'weatherDisplay' div.");
+  }
+}
+async function fetchTemperature(year, month, latitude, longitude) {
+  const response = await fetch(
+    `http://127.0.0.1:5000/predict?year=${year}&month=${month}&latitude=${latitude}&longitude=${longitude}`
+  );
+  const data = await response.json();
+
+  if (data.error) {
+    console.error("Error:", data.error);
+  } else {
+    console.log("Max Temp:", data.tmax, "Min Temp:", data.tmin);
+    alert(`Max Temp: ${data.tmax} °C, Min Temp: ${data.tmin} °C`);
+  }
+}
+function showPerformances(encodedPerformances, formattedDate, venueName) {
+  const performances = JSON.parse(atob(encodedPerformances));
+  let headerContent = `Performances on the ${formattedDate} at '${venueName}'`;
+  let content = `<h1 id="performances-on">${headerContent}</h1>`;
+  content += `<div id="weatherResult" style="display: none"></div>`;
+  content += `<ul class='performance-list'>`;
+  performances.forEach((perf) => {
+    const encodedTitle = encodeURIComponent(perf.title);
+    content += `<li class="performance-item">
+                      <a href="javascript:void(0);" 
+                         onclick="fetchTemperatureDetails('${formattedDate}', '${venueName}');"
+                         class="performance-title-link">
+                          <span class="performance-title">${perf.title}</span>
+                      </a> 
+                      <span class="composer-name">by ${perf.composer}</span>
+                  </li>`;
+  });
+  content += "</ul>";
+
+  const detailsDiv = document.getElementById("details-area");
+  detailsDiv.innerHTML = content;
+  detailsDiv.style.display = "block";
+  setTimeout(() => (detailsDiv.style.opacity = 1), 10);
+}
+
 function formatDate(date) {
   const options = { year: "numeric", month: "long" };
   let day = date.getDate();
@@ -99,21 +153,31 @@ function formatDate(date) {
 
 function showPerformances(encodedPerformances, formattedDate, venueName) {
   const performances = JSON.parse(atob(encodedPerformances));
-  let headerContent = `Performances on the ${formattedDate} at '${venueName}'`; // Header shows date and venue name
-  let content = `<h1 id="performances-on">${headerContent}</h1>`;
-  content += "<ul class='performance-list'>";
+  const detailsDiv = document.getElementById("details-area");
+
+  // Header content including a placeholder for the weather data.
+  let headerContent = `<h1 id="performances-on">Performances on the ${formattedDate} at '${venueName}'</h1>`;
+  let weatherPlaceholder = `<div id="weatherDisplay" style="display: none;"></div>`; // Initial style set to 'none'.
+
+  // Building the list of performances.
+  let performancesContent = "<ul class='performance-list'>";
   performances.forEach((perf) => {
     const encodedTitle = encodeURIComponent(perf.title);
-    content += `<li class="performance-item"><a href="https://www.youtube.com/results?search_query=${encodedTitle}" target="_blank" class="performance-title-link"><span class="performance-title">${perf.title}</span></a> <span class="composer-name">by ${perf.composer}</span></li>`;
+    performancesContent += `<li class="performance-item">
+          <a href="javascript:void(0);" onclick="fetchTemperatureDetails('${formattedDate}', '${venueName}');" class="performance-title-link">
+              <span class="performance-title">${perf.title}</span>
+          </a> 
+          <span class="composer-name">by ${perf.composer}</span>
+      </li>`;
   });
-  content += "</ul>";
+  performancesContent += "</ul>";
 
-  const detailsDiv = document.getElementById("details-area");
-  detailsDiv.innerHTML = content;
-  detailsDiv.style.display = "block"; // Make sure it's visible
-  setTimeout(() => (detailsDiv.style.opacity = 1), 10); // Fade in
+  // Combine all parts and update the inner HTML of the details area.
+  detailsDiv.innerHTML =
+    headerContent + weatherPlaceholder + performancesContent;
+  detailsDiv.style.display = "block"; // Ensure the details area is visible.
+  setTimeout(() => (detailsDiv.style.opacity = 1), 10); // Optional: Fade in effect.
 }
-
 const map2 = L.map("map2").setView([51.505, -0.09], 6); // Widen the initial zoom to see more areas
 L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
   attribution: "© OpenStreetMap contributors, © CARTO",

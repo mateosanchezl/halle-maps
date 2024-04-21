@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Haversine function to calculate distance
 def haversine(lon1, lat1, lon2, lat2):
     lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])

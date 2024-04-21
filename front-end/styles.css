@@ -37,7 +37,7 @@ html {
   display: flex;
   width: 100%;
   max-width: 1500px;
-  height: 70vh; /* Set a fixed height for the map container */
+  height: 100%; /* Set a fixed height for the map container */
 
   border-radius: 15px; /* Rounded corners */
   overflow: hidden; /* Ensures that child elements (map and details) conform to the container's rounded corners */
@@ -48,7 +48,7 @@ html {
   display: flex;
   width: 100%;
   max-width: 1500px;
-  height: 70vh; /* Set a fixed height for the map container */
+  height: 100%; /* Set a fixed height for the map container */
 
   border-radius: 15px; /* Rounded corners */
   overflow: hidden; /* Ensures that child elements (map and details) conform to the container's rounded corners */
