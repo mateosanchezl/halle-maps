@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Interactive Concert Map</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -22,7 +24,11 @@
   <body>
     <div id="top-content"></div>
     <div id="main-container">
-      <h1>Halle Maps</h1>
+      <div id="header-container">
+        <div id="lottie-animation-left" class="lottie-animation"></div>
+          <h1>HALLÉ MAPS</h1>
+        <div id="lottie-animation-right" class="lottie-animation"></div>
+      </div>
       <div id="map-container">
         <div id="map"></div>
         <div id="details-area"></div>
@@ -33,5 +39,25 @@
     </div>
 
     <script src="map.js"></script>
+
+    <script>
+      window.onload = function() {
+  var animationLeft = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-left'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '../instrument.json'
+  });
+
+  var animationRight = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-right'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '../instrument.json'
+  });
+};
+  </script>
   </body>
 </html>
